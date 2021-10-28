@@ -1,0 +1,23 @@
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\bin\Debug\CSDLNC.exe.config
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\bin\Debug\CSDLNC.exe
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\bin\Debug\CSDLNC.pdb
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Form1.resources
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Form2.resources
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Properties.Resources.resources
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.exe
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.pdb
+C:\Users\Admin\Desktop\New folder\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\bin\Debug\CSDLNC.exe.config
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\bin\Debug\CSDLNC.exe
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Form1.resources
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Form2.resources
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Properties.Resources.resources
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.exe
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.pdb
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\bin\Debug\CSDLNC.pdb
+C:\Users\Admin\Desktop\CSDLNC\CSDLNC\CSDLNC\obj\Debug\CSDLNC.Form3.resources
