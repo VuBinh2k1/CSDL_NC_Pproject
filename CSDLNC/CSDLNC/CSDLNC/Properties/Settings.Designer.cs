@@ -33,16 +33,5 @@ namespace CSDLNC.Properties {
                 return ((string)(this["QLHoaDonConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HGGQUAN\\SQLEXPRESS05;Initial Catalog=QUAN_LY_BAN_THUE_NHA_TRANSACTION" +
-            ";Integrated Security=True")]
-        public string QUAN_LY_BAN_THUE_NHA_TRANSACTIONConnectionString {
-            get {
-                return ((string)(this["QUAN_LY_BAN_THUE_NHA_TRANSACTIONConnectionString"]));
-            }
-        }
     }
 }
