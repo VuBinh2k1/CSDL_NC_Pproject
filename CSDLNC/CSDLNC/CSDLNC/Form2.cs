@@ -38,6 +38,7 @@ namespace CSDLNC
             DataTable dt2 = new DataTable();
             dt2.Load(dr2);
             dataGridView1.DataSource = dt2;
+            connect.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

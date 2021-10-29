@@ -65,7 +65,7 @@ namespace CSDLNC
             connect = new SqlConnection("Data Source=HGGQUAN\\SQLEXPRESS05;Initial Catalog=QLHoaDon;Integrated Security=True");
             connect.Open();
 
-            string sqlselect = "SELECT  CAST(SUM(TongTien) AS DECIMAL(20,0)) FROM HoaDon where MONTH(NgayLap) = MONTH(@NgLap) AND YEAR(NgayLap) = YEAR(@NgLap)";
+            string sqlselect = "SELECT CAST(SUM(TongTien) AS DECIMAL(20,0)) FROM HoaDon where MONTH(NgayLap) = MONTH(@NgLap) AND YEAR(NgayLap) = YEAR(@NgLap)";
             SqlCommand cmd = new SqlCommand(sqlselect, connect);
             cmd.Parameters.Add(new SqlParameter("@NgLap", dateTimePicker1.Value.Date));
             cmd.ExecuteNonQuery();
@@ -87,7 +87,7 @@ namespace CSDLNC
             DataTable dt2 = new DataTable();
             dt2.Load(dr2);
             dataGridView1.DataSource = dt2;
-
+            connect.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

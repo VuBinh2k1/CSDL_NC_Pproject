@@ -50,9 +50,7 @@ namespace CSDLNC
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLHoaDonDataSet = new CSDLNC.QLHoaDonDataSet();
             this.hoaDonTableAdapter = new CSDLNC.QLHoaDonDataSetTableAdapters.HoaDonTableAdapter();
-           
             this.cONTRACTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,6 +133,7 @@ namespace CSDLNC
             this.textBox1.Size = new System.Drawing.Size(200, 29);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 

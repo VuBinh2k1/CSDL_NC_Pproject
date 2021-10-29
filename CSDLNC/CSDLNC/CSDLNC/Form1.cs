@@ -35,6 +35,7 @@ namespace CSDLNC
             DataTable dt = new DataTable();
             dt.Load(dr);
             dataGridView1.DataSource = dt;
+            connect.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -127,6 +128,11 @@ namespace CSDLNC
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
