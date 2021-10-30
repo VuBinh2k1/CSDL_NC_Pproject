@@ -26,7 +26,7 @@ namespace CSDLNC
             // TODO: This line of code loads data into the 'qLHoaDonDataSet.HoaDon' table. You can move, or remove it, as needed.
             this.hoaDonTableAdapter.Fill(this.qLHoaDonDataSet.HoaDon);
 
-            connect = new SqlConnection("Data Source=HGGQUAN\\SQLEXPRESS05;Initial Catalog=QLHoaDon;Integrated Security=True");
+            connect = new SqlConnection("Data Source=PHUOCTRAN\\SQLEXPRESS;Initial Catalog=QLHoaDon;Integrated Security=True");
             connect.Open();
 
             string sqlselect1 = "SELECT TOP 5 MaHD as 'Mã HĐ', MaKH as 'Mã KH', FORMAT(NgayLap, 'dd/MM/yyyy') as 'Ngày Lập', cast(TongTien as decimal(20,0)) as 'Tổng Tiền' FROM HOADON";

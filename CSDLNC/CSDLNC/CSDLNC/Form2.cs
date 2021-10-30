@@ -21,17 +21,38 @@ namespace CSDLNC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connect = new SqlConnection("Data Source=HGGQUAN\\SQLEXPRESS05;Initial Catalog=QLHoaDon;Integrated Security=True");
+            connect = new SqlConnection("Data Source=PHUOCTRAN\\SQLEXPRESS;Initial Catalog=QLHoaDon;Integrated Security=True");
             connect.Open();
-
+            int check = 0;
             string sqlselect = "INSERT INTO HOADON(MaHD, MaKH, NgayLap, TongTien) VALUES (@MaHD, @MaKH, @NgLap, @TT)";
             SqlCommand cmd = new SqlCommand(sqlselect, connect);
-            cmd.Parameters.Add(new SqlParameter("@MaHD", textBox1.Text));
-            cmd.Parameters.Add(new SqlParameter("@MaKH", textBox2.Text));
-            cmd.Parameters.Add(new SqlParameter("@TT", textBox3.Text));
-            cmd.Parameters.Add(new SqlParameter("@NgLap", dateTimePicker1.Value.Date));
-            cmd.ExecuteNonQuery();
 
+            string[] date = dateTimePicker1.Value.Date.ToString("yyyy/MM/dd").Split('/');
+            int year = Int32.Parse(date[0]);
+            int month = Int32.Parse(date[1]);
+            if ((year == 2020 && month >= 5 && month <= 12) || (year == 2021 && month >= 1 && month <= 6))
+            {
+                check++;
+            } else
+            {
+                MessageBox.Show("Hóa đơn phải được lập từ 5/2020 đến 6/2021");
+            }
+
+            if (textBox2.Text == "") {
+                MessageBox.Show("HÃY NHẬP MÃ KHÁCH HÀNG");
+            } else
+            {
+                check++;
+            }
+
+            if(check == 2)
+            {
+                cmd.Parameters.Add(new SqlParameter("@MaHD", textBox1.Text));
+                cmd.Parameters.Add(new SqlParameter("@MaKH", textBox2.Text));
+                cmd.Parameters.Add(new SqlParameter("@TT", textBox3.Text));
+                cmd.Parameters.Add(new SqlParameter("@NgLap", dateTimePicker1.Value.Date));
+                cmd.ExecuteNonQuery();
+            }
             string sqlselect2 = "SELECT * FROM HoaDon WHERE MaHD not in (SELECT TOP ((SELECT COUNT(*) from HoaDon) - 5) MaHD FROM HoaDon)";
             SqlCommand cmd2 = new SqlCommand(sqlselect2, connect);
             SqlDataReader dr2 = cmd2.ExecuteReader();

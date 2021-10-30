@@ -62,7 +62,7 @@ namespace CSDLNC
 
         private void button5_Click(object sender, EventArgs e)
         {
-            connect = new SqlConnection("Data Source=HGGQUAN\\SQLEXPRESS05;Initial Catalog=QLHoaDon;Integrated Security=True");
+            connect = new SqlConnection("Data Source=PHUOCTRAN\\SQLEXPRESS;Initial Catalog=QLHoaDon;Integrated Security=True");
             connect.Open();
 
             string sqlselect = "SELECT CAST(SUM(TongTien) AS DECIMAL(20,0)) FROM HoaDon where MONTH(NgayLap) = MONTH(@NgLap) AND YEAR(NgayLap) = YEAR(@NgLap)";
