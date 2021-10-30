@@ -27,6 +27,26 @@ namespace CSDLNC
             string sqlselect = "INSERT INTO HOADON(MaHD, MaKH, NgayLap, TongTien) VALUES (@MaHD, @MaKH, @NgLap, @TT)";
             SqlCommand cmd = new SqlCommand(sqlselect, connect);
 
+            string sqlselect3 = "SELECT MaKH FROM KhachHang WHERE MaKH = '" + textBox2.Text + "'";
+            SqlCommand cmd3 = new SqlCommand(sqlselect3, connect);
+            string MaKH = "";
+            SqlDataReader reader = cmd3.ExecuteReader();
+            while (reader.Read())
+            {
+                MaKH = Convert.ToString(reader[0]);
+            }
+            reader.Close();
+
+            string sqlselect4 = "SELECT MaHD FROM HoaDon WHERE MaHD = '" + textBox1.Text + "'";
+            SqlCommand cmd4 = new SqlCommand(sqlselect4, connect);
+            string MaHD = "";
+            SqlDataReader reader2 = cmd4.ExecuteReader();
+            while (reader2.Read())
+            {
+                MaHD = Convert.ToString(reader2[0]);
+            }
+            reader2.Close();
+
             string[] date = dateTimePicker1.Value.Date.ToString("yyyy/MM/dd").Split('/');
             int year = Int32.Parse(date[0]);
             int month = Int32.Parse(date[1]);
@@ -38,6 +58,32 @@ namespace CSDLNC
                 MessageBox.Show("Hóa đơn phải được lập từ 5/2020 đến 6/2021");
             }
 
+            if (MaHD != "")
+            {
+                MessageBox.Show("Mã hóa đơn đã tồn tại");
+            }
+            else
+            {
+                check++;
+            }
+
+
+            if (MaKH == "")
+            {
+                MessageBox.Show("Mã khách hàng không tồn tại");
+            } else
+            {
+                check++;
+            }
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("HÃY NHẬP MÃ HÓA ĐƠN");
+            } else
+            {
+                check++;
+            }
+
             if (textBox2.Text == "") {
                 MessageBox.Show("HÃY NHẬP MÃ KHÁCH HÀNG");
             } else
@@ -45,7 +91,7 @@ namespace CSDLNC
                 check++;
             }
 
-            if(check == 2)
+            if(check == 6)
             {
                 cmd.Parameters.Add(new SqlParameter("@MaHD", textBox1.Text));
                 cmd.Parameters.Add(new SqlParameter("@MaKH", textBox2.Text));
