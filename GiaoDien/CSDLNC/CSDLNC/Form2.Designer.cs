@@ -30,9 +30,7 @@ namespace CSDLNC
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-          
             this.cONTRACTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-           
             this.hoaDonTableAdapter = new CSDLNC.QLHoaDonDataSetTableAdapters.HoaDonTableAdapter();
             this.qLHoaDonDataSet = new CSDLNC.QLHoaDonDataSet();
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -60,10 +58,6 @@ namespace CSDLNC
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-
-
-  
- 
             // 
             // hoaDonTableAdapter
             // 
@@ -86,45 +80,49 @@ namespace CSDLNC
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(689, 190);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(539, 88);
+            this.textBox3.Location = new System.Drawing.Point(479, 70);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 29);
+            this.textBox3.Size = new System.Drawing.Size(178, 25);
             this.textBox3.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(539, 35);
+            this.textBox2.Location = new System.Drawing.Point(479, 28);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 29);
+            this.textBox2.Size = new System.Drawing.Size(178, 25);
             this.textBox2.TabIndex = 6;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(119, 35);
+            this.textBox1.Location = new System.Drawing.Point(106, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 29);
+            this.textBox1.Size = new System.Drawing.Size(178, 25);
             this.textBox1.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(402, 91);
+            this.label5.Location = new System.Drawing.Point(357, 73);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 21);
+            this.label5.Size = new System.Drawing.Size(70, 17);
             this.label5.TabIndex = 3;
             this.label5.Text = "Tổng tiền:";
             // 
@@ -132,9 +130,9 @@ namespace CSDLNC
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(402, 38);
+            this.label4.Location = new System.Drawing.Point(357, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 21);
+            this.label4.Size = new System.Drawing.Size(105, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mã khách hàng:";
             // 
@@ -142,9 +140,9 @@ namespace CSDLNC
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 89);
+            this.label3.Location = new System.Drawing.Point(5, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 21);
+            this.label3.Size = new System.Drawing.Size(89, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày lập HĐ:";
             // 
@@ -152,9 +150,9 @@ namespace CSDLNC
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 38);
+            this.label2.Location = new System.Drawing.Point(5, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 21);
+            this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã hóa đơn:";
             // 
@@ -169,9 +167,11 @@ namespace CSDLNC
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 42);
+            this.groupBox1.Location = new System.Drawing.Point(0, 34);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(775, 141);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(689, 113);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập TT hóa đơn";
@@ -180,26 +180,29 @@ namespace CSDLNC
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(119, 83);
+            this.dateTimePicker1.Location = new System.Drawing.Point(106, 66);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(178, 25);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(12, 255);
+            this.panel2.Location = new System.Drawing.Point(11, 204);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(775, 237);
+            this.panel2.Size = new System.Drawing.Size(689, 190);
             this.panel2.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(14, 9);
+            this.panel1.Location = new System.Drawing.Point(12, 7);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 178);
+            this.panel1.Size = new System.Drawing.Size(689, 142);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -210,7 +213,7 @@ namespace CSDLNC
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(775, 39);
+            this.label1.Size = new System.Drawing.Size(689, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÊM HÓA ĐƠN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -220,10 +223,11 @@ namespace CSDLNC
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(553, 193);
+            this.button1.Location = new System.Drawing.Point(492, 154);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(200, 39);
+            this.button1.Size = new System.Drawing.Size(178, 31);
             this.button1.TabIndex = 0;
             this.button1.Text = "&Thêm hóa đơn";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -235,10 +239,11 @@ namespace CSDLNC
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(24, 193);
+            this.button2.Location = new System.Drawing.Point(21, 154);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(200, 39);
+            this.button2.Size = new System.Drawing.Size(178, 31);
             this.button2.TabIndex = 5;
             this.button2.Text = "&Danh sách HĐ";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -250,10 +255,11 @@ namespace CSDLNC
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(292, 193);
+            this.button3.Location = new System.Drawing.Point(260, 154);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(200, 39);
+            this.button3.Size = new System.Drawing.Size(178, 31);
             this.button3.TabIndex = 6;
             this.button3.Text = "&Thống kê doanh thu";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -262,18 +268,20 @@ namespace CSDLNC
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 504);
+            this.ClientSize = new System.Drawing.Size(714, 403);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "Thêm hóa đơn";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cONTRACTBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLHoaDonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).EndInit();
